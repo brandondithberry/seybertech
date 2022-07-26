@@ -84,19 +84,16 @@ export default {
     extractCSS: true,
     postcss: {
       plugins: {
-        'postcss-preset-env': postcssPresetEnv({
-          stage: 1,
-          features: {
-            'nesting-rules': false
-          }
-        }),
+        'postcss-import': true,
+        'tailwindcss/nesting': {},
+        'postcss-nested': {},
         'postcss-easing-gradients': postcssEasingGradients
       }
     },
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) { }
   },
   /*
    ** Custom additions configuration
