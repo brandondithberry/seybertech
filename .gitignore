@@ -93,3 +93,6 @@ sw.*
 
 # Local Netlify folder
 .netlify
+
+# Auto generated file
+desktop.ini
