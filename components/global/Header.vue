@@ -14,10 +14,9 @@
         </ul>
       </nav>
     </div>
-    -->
     <div class="cta">
-      <a href="/free-assessment" class="btn">Free Assessment</a>
-    </div>
+      <nuxt-link :to="{ path: '/', hash: '#free-assessment' }" class="btn">Free Assessment</nuxt-link>
+    </div>-->
   </header>
 </template>
 
@@ -29,7 +28,7 @@ export default {
 
 <style lang="postcss" scoped>
 header {
-  @apply flex w-full place-content-between p-8;
+  @apply flex w-full place-content-center place-items-center p-8 text-center m-auto;
 
   .nuxt-link-exact-active {
     @apply font-bold;

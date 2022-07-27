@@ -4,7 +4,7 @@
       <div class="overlay">
         <h1 class="title text-left">Technology Support & Solutions</h1>
         <h2 class="subtitle mb-8">Enabling business growth through technology.</h2>
-        <a href="/free-assessment" class="btn">Free Assessment</a>
+        <nuxt-link :to="{ path: '/', hash: '#free-assessment' }" class="btn">Free Assessment</nuxt-link>
       </div>
     </section>
     <section class="services">
@@ -66,7 +66,7 @@
         </div>
       </div>
     </section>
-    <section class="cta">
+    <section class="cta" id="free-assessment">
       <div class="container">
         <h2>Schedule a free technology assessment today.</h2>
         <div class="form">
