@@ -1,8 +1,9 @@
 <template>
-  <header class="flex w-full place-content-between p-8">
+  <header>
     <div class="logo">
       <nuxt-link to="/"><img src="img/logo.svg" alt="SeyberTech Logo" width="180" /></nuxt-link>
     </div>
+    <!--
     <div class="menu">
       <nav>
         <ul class="flex gap-14 text-lg">
@@ -13,6 +14,7 @@
         </ul>
       </nav>
     </div>
+    -->
     <div class="cta">
       <a href="/free-assessment" class="btn">Free Assessment</a>
     </div>
@@ -26,11 +28,15 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.nuxt-link-exact-active {
-  @apply font-bold;
-}
+header {
+  @apply flex w-full place-content-between p-8;
 
-li a:hover {
-  @apply text-primary;
+  .nuxt-link-exact-active {
+    @apply font-bold;
+  }
+
+  li a:hover {
+    @apply text-primary;
+  }
 }
 </style>

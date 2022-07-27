@@ -66,10 +66,6 @@ export default {
    */
   css: ['@/assets/css/main.pcss'],
   /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: ['~/plugins/vue-content-placeholders.js'],
-  /*
    ** Nuxt.js dev-modules
    */
   buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
@@ -120,8 +116,7 @@ export default {
         /^nuxt-content/,
         /code/,
         /pre/,
-        /token/,
-        /^vue-content-placeholders/
+        /token/
       ]
     }
   },

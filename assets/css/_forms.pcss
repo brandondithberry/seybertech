@@ -1,9 +1,27 @@
 @layer base {
   input,
   textarea {
-    color: var(--text);
-    border: var(--border-color) 1px solid;
-    background-color: var(--bg-secondary);
-    @apply rounded;
+    @apply rounded shadow border border-gray-100 p-2;
+  }
+
+  form {
+    @apply max-w-xl m-auto;
+
+    .grid {
+      @apply grid-cols-2 items-stretch gap-4;
+    }
+
+    label {
+      @apply font-bold;
+    }
+
+    input,
+    textarea {
+      @apply w-full mb-4;
+    }
+
+    button {
+      @apply block m-auto text-center;
+    }
   }
 }
