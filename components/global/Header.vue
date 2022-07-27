@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <nuxt-link to="/"><img src="img/logo.svg" alt="SeyberTech Logo" width="180" /></nuxt-link>
+      <nuxt-link to="/"><img src="img/logo.svg" alt="SeyberTech Logo" width="220" /></nuxt-link>
     </div>
     <!--
     <div class="menu">

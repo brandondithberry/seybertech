@@ -2,8 +2,8 @@
   <main>
     <section class="hero-banner">
       <div class="overlay">
-        <h1 class="title text-left">Technology Support & Solutions</h1>
-        <h2 class="subtitle mb-8">Enabling business growth through technology.</h2>
+        <h1 class="title">Technology Support & Solutions</h1>
+        <h2 class="subtitle mb-10">Enabling business growth through technology.</h2>
         <nuxt-link :to="{ path: '/', hash: '#free-assessment' }" class="btn">Free Assessment</nuxt-link>
       </div>
     </section>
@@ -66,6 +66,90 @@
         </div>
       </div>
     </section>
+    <section class="testimonials">
+      <div class="container">
+        <h2>Our Work Speaks for Itself</h2>
+        <div class="quotes">
+          <figure>
+            <figcaption>Hope Federal Credit Union</figcaption>
+            <blockquote>
+              <p>
+                Justin made the implementation and purchase of a new firewall and cabinet solution extremely simple for
+                us here at Hope Federal Credit Union. His attention to detail, consideration of time, and obvious
+                professional expertise gave me a great deal of solace through this process. He saved us thousands of
+                dollars and made himself available to answer any and all questions. Highly recommended!
+              </p>
+            </blockquote>
+          </figure>
+          <figure>
+            <figcaption>Gold Standard Cleaning Services</figcaption>
+            <blockquote>
+              <p>
+                I am a small business owner. I was experiencing issues with my business’s domain, website, google
+                business profile and email. Once he took over, the situation was painless. Seybertech had me back up and
+                all systems running within 48 hours. Their prices are very reasonable and they provide a top-notch
+                service! If I could go back in time, the only thing I would do differently is: I wouldn’t have waited a
+                week to call! Thank you again for everything!
+              </p>
+            </blockquote>
+          </figure>
+          <figure>
+            <figcaption>Mark Everett Attorney at Law, PLLC</figcaption>
+            <blockquote>
+              <p>
+                Professional and extremely responsive. I would recommend them in a heartbeat! They take on a project and
+                work diligently until it is complete to customer’s satisfaction. Best around! (West Virginia for the
+                Gospel) I would not hesitate to recommend them to anyone looking any kind of IT services. The owner is a
+                great guy who keeps his word and values close relationships with his clients. Great job!
+              </p>
+            </blockquote>
+          </figure>
+          <figure>
+            <figcaption>Matthew P. Crimmel Esq. Attorney at Law, PLLC</figcaption>
+            <blockquote>
+              <p>
+                Professional, knowledgeable, and experienced. SeyberTech is not only thorough but is also well apprised
+                on rapidly changing technology. Highly recommended.
+              </p>
+            </blockquote>
+          </figure>
+          <figure>
+            <figcaption>Wagoner Desai, PLLC</figcaption>
+            <blockquote>
+              <p>
+                Seybertech has been our go to for anything technology related for our business and we have never had a
+                better experience with a local technology support company. More than once, they’ve delivered above and
+                beyond to help us focus on the day to day of our practice. Thanks for the good work!
+              </p>
+            </blockquote>
+          </figure>
+          <figure>
+            <figcaption>Enliven Chiropractic and Wellness</figcaption>
+            <blockquote>
+              <p>
+                We've hired Justin for several years to handle critical parts of our IT system. His service is always
+                professional and done correctly the first time.
+              </p>
+            </blockquote>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <h2>More About Us</h2>
+        <p>
+          SeyberTech is a locally and veteran-owned West Virginia based technology services company on a mission to
+          optimize technology for businesses small to large from startups to enterprise level companies. We offer over
+          15 years of technology industry experience providing IT and technical services to a wide range of clients,
+          from early stage startups, to thriving local business to large corporations.
+        </p>
+        <p>
+          Justin Seybert comes from an extensive technology background spanning from cyber security consulting for
+          Federal clients to serving Fortune 100 technology companies in system design, integration and support.
+        </p>
+      </div>
+    </section>
     <section class="cta" id="free-assessment">
       <div class="container">
         <h2>Schedule a free technology assessment today.</h2>
@@ -92,20 +176,26 @@
 
 <style lang="postcss" scoped>
 .hero-banner {
-  @apply w-full;
+  @apply w-full text-center rounded-lg;
   background: center center / cover no-repeat url(~/static/img/point.jpg);
 
   .overlay {
     @apply block w-full h-full py-48 px-8;
-    background: linear-gradient(0deg, #fff, #ffffff00);
+    background: #ffffff44;
+  }
+
+  h1,
+  h2 {
+    @apply drop-shadow  drop-shadow-lg;
   }
 }
 
 .services {
-  @apply pb-20;
+  @apply pb-6;
+  margin-top: -3rem;
 
   .container {
-    @apply grid grid-cols-2 gap-10 px-8 max-w-screen-lg m-auto;
+    @apply grid gap-10 px-8 max-w-screen-lg m-auto md:grid-cols-2;
 
     div {
       @apply p-10 bg-white rounded-lg shadow-lg border border-gray-100;
@@ -118,7 +208,7 @@
 }
 
 .steps {
-  @apply text-center px-8 py-20 bg-gray-50 shadow-lg rounded-lg border border-gray-100 m-4;
+  @apply text-center px-8 py-16 bg-gray-50 shadow-lg rounded-lg border border-gray-100 m-6;
 
   .container {
     @apply max-w-lg m-auto;
@@ -137,20 +227,52 @@
   }
 }
 
+.testimonials {
+  @apply w-full border border-gray-200 rounded-lg px-6 py-16 md:p-10 md:m-6;
+
+  h2 {
+    @apply text-center mb-8 text-primary;
+  }
+
+  p {
+    @apply mt-2 text-gray;
+  }
+
+  .container {
+    @apply w-full;
+
+    .quotes {
+      @apply w-full grid gap-8 md:grid-cols-2 lg:grid-cols-3;
+
+      figure {
+        @apply border border-gray-50 rounded-lg shadow-lg p-8;
+
+        figcaption {
+          @apply font-bold mt-2;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  @apply text-center px-8 py-20 bg-gray-50 shadow-lg rounded-lg border border-gray-100 m-6;
+
+  .container {
+    @apply max-w-lg m-auto;
+  }
+
+  p {
+    @apply mt-4 text-gray;
+  }
+}
+
 .cta {
-  @apply px-8 py-20 shadow-lg rounded-lg border border-primary-100 m-4;
+  @apply px-8 py-20 shadow-lg rounded-lg border border-primary-100 m-6;
   background: linear-gradient(60deg, #00a0e433, #00a0e411);
 
   h2 {
     @apply text-center mb-8;
-  }
-}
-
-@media all and (max-width: 992px) {
-  .services {
-    .container {
-      @apply grid-cols-1;
-    }
   }
 }
 </style>
