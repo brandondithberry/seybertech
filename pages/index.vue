@@ -198,7 +198,7 @@
     @apply grid gap-4 px-4 max-w-screen-lg m-auto md:gap-10 md:grid-cols-2 md:px-8;
 
     div {
-      @apply p-10 bg-white rounded-lg shadow-lg border border-gray-100;
+      @apply py-10 px-6 bg-white rounded-lg shadow-lg border border-gray-100 text-center md:text-left md:px-10;
 
       h4 {
         @apply text-gray;
