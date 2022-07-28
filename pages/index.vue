@@ -141,12 +141,11 @@
         <p>
           SeyberTech is a locally and veteran-owned West Virginia based technology services company on a mission to
           optimize technology for businesses small to large from startups to enterprise level companies. We offer over
-          15 years of technology industry experience providing IT and technical services to a wide range of clients,
-          from early stage startups, to thriving local business to large corporations.
-        </p>
-        <p>
-          Justin Seybert comes from an extensive technology background spanning from cyber security consulting for
-          Federal clients to serving Fortune 100 technology companies in system design, integration and support.
+          15 years of technology industry experience providing IT, Cyber Security, and Technology services across a
+          myriad of sectors. The owner, Justin Seybert, comes from an extensive technology background spanning from
+          cyber security consulting for Federal clients to serving Fortune 100 technology companies in system design,
+          integration and support to enabling local businesses to grow through properly designed and implemented
+          technology solutions.
         </p>
       </div>
     </section>
