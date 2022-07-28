@@ -154,7 +154,7 @@
       <div class="container">
         <h2>Schedule a free technology assessment today.</h2>
         <div class="form">
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="grid">
               <label>First Name <input type="text" name="firstname" /></label>
               <label>Last Name <input type="text" name="lastname" /></label>
@@ -166,6 +166,7 @@
             <div>
               <label>Message <textarea name="message"></textarea></label>
             </div>
+            <div data-netlify-recaptcha="true"></div>
             <button class="btn" type="submit">Get Assessment</button>
           </form>
         </div>
