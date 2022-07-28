@@ -191,11 +191,11 @@
 }
 
 .services {
-  @apply pb-6;
+  @apply mb-6;
   margin-top: -3rem;
 
   .container {
-    @apply grid gap-10 px-8 max-w-screen-lg m-auto md:grid-cols-2;
+    @apply grid gap-4 px-4 max-w-screen-lg m-auto md:gap-10 md:grid-cols-2 md:px-8;
 
     div {
       @apply p-10 bg-white rounded-lg shadow-lg border border-gray-100;
@@ -208,7 +208,7 @@
 }
 
 .steps {
-  @apply text-center px-8 py-16 bg-gray-50 shadow-lg rounded-lg border border-gray-100 m-6;
+  @apply text-center my-6 mx-4 px-4 py-16 bg-gray-50 shadow-lg rounded-lg border border-gray-100 md:px-8;
 
   .container {
     @apply max-w-lg m-auto;
@@ -228,7 +228,7 @@
 }
 
 .testimonials {
-  @apply w-full border border-gray-200 rounded-lg px-6 py-16 md:p-10 md:m-6;
+  @apply w-full border border-gray-200 rounded-lg px-4 py-16 md:p-10 md:m-6;
 
   h2 {
     @apply text-center mb-8 text-primary;
@@ -242,7 +242,7 @@
     @apply w-full;
 
     .quotes {
-      @apply w-full grid gap-8 md:grid-cols-2 lg:grid-cols-3;
+      @apply w-full grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3;
 
       figure {
         @apply border border-gray-50 rounded-lg shadow-lg p-8;
@@ -256,7 +256,7 @@
 }
 
 .about {
-  @apply text-center px-8 py-20 bg-gray-50 shadow-lg rounded-lg border border-gray-100 m-6;
+  @apply text-center px-4 py-20 bg-gray-50 shadow-lg rounded-lg border border-gray-100 m-4 md:px-4 md:m-6;
 
   .container {
     @apply max-w-lg m-auto;
@@ -268,7 +268,7 @@
 }
 
 .cta {
-  @apply px-8 py-20 shadow-lg rounded-lg border border-primary-100 m-6;
+  @apply px-8 py-20 shadow-lg rounded-lg border border-primary-100 m-4 md:m-6;
   background: linear-gradient(60deg, #00a0e433, #00a0e411);
 
   h2 {
