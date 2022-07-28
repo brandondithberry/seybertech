@@ -166,7 +166,7 @@
             <div>
               <label>Message <textarea name="message"></textarea></label>
             </div>
-            <div data-netlify-recaptcha="true"></div>
+            <div data-netlify-recaptcha="true" class="my-4"></div>
             <button class="btn" type="submit">Get Assessment</button>
           </form>
         </div>
