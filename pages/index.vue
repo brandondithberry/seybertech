@@ -151,7 +151,11 @@
     </section>
     <section class="cta" id="free-assessment">
       <div class="container">
-        <h2>Schedule a free technology assessment today.</h2>
+        <h2>
+          Schedule a free technology assessment or <br />call us at
+          <a class="underline" href="tel:13049741104">(304) 974-1104</a> today.
+        </h2>
+        <h3></h3>
         <div class="form">
           <form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <div class="grid">
@@ -271,7 +275,8 @@
   @apply px-8 py-20 shadow-lg rounded-lg border border-primary-100 m-4 md:m-6;
   background: linear-gradient(60deg, #00a0e433, #00a0e411);
 
-  h2 {
+  h2,
+  h4 {
     @apply text-center mb-8;
   }
 }
